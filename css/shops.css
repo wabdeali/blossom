@@ -1,0 +1,239 @@
+/* HTMLL TAGS */
+body {
+    --darkPink: #D96C80;
+    --lightPink: #F2D8E1;
+    --lightGrey: #f7f7f7;
+    --darkGrey: #565656;
+    --lightWeight: 400;
+    --mediumWeight: 600;
+    --heavyWeight: 700;
+    --mainFont: 'Old Standard TT', serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --fancyFont: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #D96C80;
+}
+
+/* SHOPS HEADER */
+
+.shopHeader {
+    padding: 10px;
+    background-color: var(--darkPink);
+}
+
+.shopHeaderTitle {
+    position: relative;
+    color: white;
+    margin: 20px 0;
+}
+
+.shopHeaderLine {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background-color: var(--lightPink);
+}
+
+.shopHeaderTitle h1 {
+    font-family: var(--fancyFont);
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 18px;
+}
+
+.shopHeader p {
+    display: block;
+    color: white;
+}
+
+.stockBanner {
+    padding: 50px 0px 20px;
+    text-align: center;
+    line-height: 3px;
+}
+
+/* STOCK BANNER (Products) */
+
+.stockBanner h1 {
+    font-family: var(--mainFont);
+    font-size: 3em;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.productList {
+    margin: 10px 
+}
+
+/* REMOVED FOR NOW */
+/* .productList ol {
+    font-size: .8em;
+}
+
+.productlist ol li {
+    margin: 5px;
+} */
+
+
+/* PRODUCT DESC CARDS*/
+
+.productDesc {
+    text-align: center;
+    margin: 10px 0px 30px;
+    background-color: var(--darkPink);
+    padding-bottom: 20px;
+    box-shadow: 1px 3px 3px black;
+
+}
+
+.productDescImg {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 3px black;
+}
+
+.productDesc h1 {
+    font-size: 2em;
+    font-family: var(--mainFont);
+    display: block;
+    margin: 15px 0px 10px;
+}
+
+.productDesc h4 {
+    font-family: var(--secondaryFont);
+    display: block;
+}
+
+.productDescButton {
+    font-family: var(--fancyFont);
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 20px 0px 10px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.productDescButton:hover {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
+/* TO MAKE IT RESPONSIVE */
+
+@media screen and (min-width:680px) {
+
+    /* CARD STYLING */
+
+    .shopHeader {
+        padding: 20px 20%;
+        color: white;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    li {
+        font-size: 1.2em;
+        color: white;
+    }
+    .shopHeaderLine {
+        height: 100%;
+    }
+
+    .hero {
+        display: block;
+        margin: 5% 25%;
+        padding: 20px;
+        text-align: center;
+        background-color: var(--darkPink);
+    }
+
+    .hero img {
+        display: block;
+    }
+
+    .stockBanner {
+        padding: 0px;
+    }
+
+    .shopProducts {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: white;
+    }
+
+    .productDesc {
+        display: block;
+        padding-top: 0;
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 50px;
+        transition: 0.3s;
+    }
+
+    .productDesc h1, h6 {
+        display: block;
+        padding: 0px 20px;
+    }
+    .productDesc:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px var(--darkBlue);
+    }
+
+    .contactForm {
+        padding: 10px 10px;
+    }
+    /* FOOTER STYLING */
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-top: solid black 1px;
+        font-size: 1.5em;
+    }
+
+    .socialIcons {
+        margin: 10px 0px;
+        font-size: 2.5em;
+    }
+
+    .socialIcons .fa {
+        margin: 0px 5px;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+
+
+    .hero{
+        margin: 5% 35%;
+    }
+
+    .contactForm {
+        padding: 20px 150px;
+    }
+
+    .products {
+        margin: 100px;
+    }
+
+    .productDesc {
+        max-width: 450px;
+    }
+
+}

@@ -1,0 +1,434 @@
+
+/* HTMLL TAGS */
+body {
+    --darkPink: #D96C80;
+    --lightPink: #F2D8E1;
+    --lightGrey: #f7f7f7;
+    --darkGrey: #565656;
+    --lightWeight: 400;
+    --mediumWeight: 600;
+    --heavyWeight: 700;
+    --mainFont: 'Old Standard TT', serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --fancyFont: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #D96C80;
+}
+
+h1 {
+    font-family: var(--mainFont);
+    font-weight: var(--lightWeight);
+}
+
+h2 {
+    /* font-family: 'Abhaya Libre', serif;
+    font-weight: var(--lightWeight); */
+    font-family: var(--fancyFont);
+    font-size: 2em;
+}
+
+h4 {
+    font-family: var(--mainFont);
+    font-weight: var(--heavyWeight);
+}
+
+p {
+    color: var(--darkGrey);
+    font-size: .8em;
+    font-family: var(--secondaryFont);
+}
+
+/* SLIDENAV */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: var(--lightGrey); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--darkPink);
+    display: block;
+    transition: 0.3s;
+    min-width: 200px;
+}
+
+.sidenav a:hover {
+    color: var(--lightPink);
+    text-decoration: none;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    font-size: 30px;
+}
+
+
+/* HAMBURGER */
+.fa-bars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+}
+
+.hamburger span {
+    font-size: 2rem;
+}
+
+
+/* HEADER */
+.header {
+    background-color: var(--lightPink);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.header h2 {
+    margin: 2px;
+}
+
+.header h2 {
+    font-family: var(--mainFont);
+    font-weight: var(--lightWeight);
+    letter-spacing: -.1.1em;
+}
+
+.header h4 {
+    font-family: var(--mainFont);
+    font-size: .7em;
+
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 25%;
+    width: 25%;
+    background-position: cover;
+    padding: 0;
+}
+
+
+
+/* OUR SHOP */
+
+.ourShops {
+    /* color: #D96C80; */
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 0;
+    background-color: var(--darkPink);
+}
+
+.ourShops h2 {
+    font-family: var(--fancyFont);
+    color: white;
+    font-weight: var(--lightWeight);
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.ourShops h2::after {
+    margin: 8px  auto 0 auto;
+    content: "";
+    display: block;
+    background: white;
+    height: 1px;
+    width: 40%;  
+}
+
+/* PRODUCTS */
+
+.productCard {
+    text-align: center;
+    margin: 10px 20px 30px 20px;
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 1px 3px 3px black;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 1px 3px black;
+}
+
+.products {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color: var(--darkPink);
+}
+
+.productCard h1 {
+    font-family: var(--mainFont);
+    font-weight: var(--lightWeight);
+    font-size: 2em;
+    margin: 10px 0px 15px 0px;
+}
+
+.productCard h1::after {
+    
+    margin: 4px  auto 0 auto;
+    content: "";
+    display: block;
+    background: var(--darkGrey);
+    height: 1px;
+    width: 40%;  
+}
+
+.productCard p {
+    display: block;
+    margin: 0px 20px 10px 20px;
+}
+
+/* BUTTONS */
+
+.productButton {
+    border: 1px var(--darkPink) solid;
+    border-radius: 3px; 
+    display: inline-block;
+    font-family: var(--fancyFont);
+    font-size: 1.2em;
+    padding: 7px 35px;
+    margin: 7px 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 3px 5px var(--darkPink);
+}
+
+.productButton:hover {
+    text-decoration: none;
+    color: var(--darkPink);
+}
+
+/* To change Bootstrap Carousel icons color */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+/* CONTACT FORM */
+
+.contactForm {
+    text-align: center;
+    background-color: var(--lightGrey);
+    padding: 20px 0px;
+}
+
+.contactForm h1 {
+    font-family: var(--fancyFont);
+}
+
+.contactForm p {
+    font-size: 1.1em;
+}
+.contactForm input, #message {
+    border: black solid 2px;
+    margin: 20px auto;
+    padding: 10px 5px;
+    width: 80%;
+    display: block;
+}
+
+.contactFormButton {
+    font-family: var(--fancyFont);
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 20px auto 10px;
+    padding: 10px 30px;
+    display: block;
+    width: 50%;
+}
+.contactLinks a i{
+    color: black;
+    padding: 20px 0px;
+    font-size: 2em;
+}
+
+.contactLinks a:hover, .contactLinks i:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER STYLING */
+.footer {
+    text-align: center;
+    margin: 10px 30px;
+    border-top: solid black 1px;
+}
+
+.socialIcons {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
+.socialIcons .fa {
+    margin: 0px 5px;
+}
+
+.popup{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 2em;
+}
+
+.popuplinks a {
+    display: block;
+}
+
+.card{
+    width: 65em;
+    height: auto;
+    background-color: rgb(169, 171, 173);
+    position: relative;
+}
+
+.close1 a{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 3em;
+    size: 20em;
+    transform: rotate(45deg);
+    z-index: 1;
+    color: red;
+    cursor: pointer;
+}
+
+.close1 a:hover {
+    text-decoration: none;
+    color: red;
+}
+.form{
+    margin-top: 5px;
+    display: large;
+    font-size: 3vh;
+    text-align: center;
+    padding: 10px 0px;
+    color: var(--darkPink);
+    padding: 50px 0px;
+    
+}
+
+.form a {
+    display: block;
+    padding: 2px 0px;
+    text-decoration: underline;
+    color: var(--darkPink);
+}
+
+.form a:hover {
+    color: var(--darkPink);
+}
+.form a i {
+    font-size: 1.3em;
+}
+
+/* TO MAKE IT RESPONSIVE */
+
+@media screen and (min-width:680px) {
+
+    /* SLIDE NAV */
+    
+    .hamburger span {
+        font-size: 3em;
+        color: var(--darkPink);
+    }
+
+    .ourShops {
+        background-color: white;
+        padding: 0px;
+    }
+
+    .ourShops h2 {
+        font-size: 3em;
+        color: var(--darkPink);
+        padding: 5px 0px;
+    }
+
+    .ourShops h2::after {
+    
+        margin: 4px  auto;
+        content: "";
+        display: block;
+        background: var(--darkPink);
+        height: 1px;
+        width: 40%;  
+    }
+
+    /* CARD STYLING */
+
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: var(--darkPink);
+    }
+    .productCard {
+        display: block;
+        padding-top: 0;
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 50px;
+        transition: 0.3s;
+    }
+
+    .productCard:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px var(--darkBlue);
+    }
+
+    .card{
+        width: 50%;
+        height: auto;
+        background-color: rgb(169, 171, 173);
+        position: relative;
+    }
+
+    /* FOOTER STYLING */
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-top: solid black 1px;
+        font-size: 1.5em;
+    }
+
+    .socialIcons {
+        margin: 10px 0px;
+        font-size: 2.5em;
+    }
+
+    .socialIcons .fa {
+        margin: 0px 5px;
+    }
+
+}

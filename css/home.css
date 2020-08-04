@@ -1,0 +1,269 @@
+body {
+    --darkPink: #D96C80;
+    --lightPink: #F2D8E1;
+    --lightGrey: #f7f7f7;
+    --darkGrey: #565656;
+    --lightWeight: 400;
+    --mediumWeight: 600;
+    --heavyWeight: 700;
+    --mainFont: 'Old Standard TT', serif;
+    --secondaryFont: 'Open Sans', sans-serif;
+    --fancyFont: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: var(--darkGrey);
+    font-size: 1em;
+    font-family: var(--secondaryFont);
+}
+.btn-primary {
+    background-color: var(--darkPink) !important;
+    border: none !important;
+}
+
+.mainJumbo {
+    position: relative !important;
+    background-color: var(--darkPink) !important;
+}
+.heroHome {
+    position: relative;
+}
+.heroHome h1{
+    font-family: var(--mainFont);
+    display: block;
+    padding: 20px 5px 0;
+    color: white;
+    line-height: 0.8em;
+}
+.heroHome p{
+    color: white;
+    display: block;
+    padding: 5px 5px 10px;
+}
+.heroHome img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    filter: blur(50%);
+}
+.events {
+    background-color: var(--lightPink);
+}
+.events h1 {
+    font-family: var(--fancyFont);
+}
+
+.darkPinkFont {
+    color: var(--darkPink);
+    font-family: var(--fancyFont);
+}
+.whoWeAre {
+    font-family: var(--fancyFont);
+    font-size: 2em;
+}
+.card-title {
+    font-size: 1.8em;
+    font-family: var(--fancyFont);
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: var(--lightGrey); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--darkPink);
+    display: block;
+    transition: 0.3s;
+    min-width: 200px;
+}
+
+.sidenav a:hover {
+    color: var(--lightPink);
+    text-decoration: none;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    font-size: 30px;
+}
+
+
+/* HAMBURGER */
+.fa-bars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+}
+
+.hamburger span {
+    font-size: 2rem;
+}
+
+
+/* HEADER */
+.header {
+    background-color: var(--lightPink);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.header h2 {
+    margin: 2px;
+}
+
+.header h2 {
+    font-family: var(--mainFont);
+    font-weight: var(--lightWeight);
+    letter-spacing: -.1.1em;
+}
+
+.header h4 {
+    font-family: var(--mainFont);
+    font-size: .7em;
+
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 25%;
+    width: 25%;
+    background-position: cover;
+    padding: 0;
+}
+
+
+/* CONTACT FORM */
+
+.contactForm {
+    text-align: center;
+    background-color: var(--lightGrey);
+    padding: 20px 0px;
+}
+
+.contactForm h1 {
+    font-family: var(--fancyFont);
+}
+
+.contactForm p {
+    font-size: 1.1em;
+}
+.contactForm input, #message {
+    border: black solid 2px;
+    margin: 20px auto;
+    padding: 10px 5px;
+    width: 80%;
+    display: block;
+}
+
+.contactFormButton {
+    font-family: var(--fancyFont);
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 20px auto 10px;
+    padding: 10px 30px;
+    display: block;
+    width: 50%;
+}
+.contactLinks a i{
+    color: black;
+    padding: 20px 0px;
+    font-size: 2em;
+}
+
+.contactLinks a:hover, .contactLinks i:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER STYLING */
+.footer {
+    text-align: center;
+    margin: 10px 30px;
+    border-top: solid black 1px;
+}
+
+.socialIcons {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
+.socialIcons .fa {
+    margin: 0px 5px;
+}
+
+@media screen and (min-width:680px) {
+
+    p{
+        font-size: 20px;
+    }
+    .heroHome {
+        height: 380px;
+    }
+    .heroHome h1{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 5em;
+    }
+    .heroHome p{
+        text-align: center;
+    }
+    .card-title{
+        font-size: 30px !important;
+    }
+    .card-body{
+        margin: auto 0 !important; 
+    }
+    .whoWeAre {
+        font-size: 40px !important;
+    }
+
+
+    /* SLIDE NAV */
+    .hamburger span {
+        font-size: 3em;
+        color: var(--darkPink);
+    }
+
+    /* FOOTER STYLING */
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-top: solid black 1px;
+        font-size: 1.5em;
+    }
+
+    .socialIcons {
+        margin: 10px 0px;
+        font-size: 2.5em;
+    }
+
+    .socialIcons .fa {
+        margin: 0px 5px;
+    }
+
+
+
+}
