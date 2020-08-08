@@ -7,6 +7,11 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+  const openPopup = () => {
+    target = '#popupauto'
+    document.querySelector(target).style.display = 'flex';
+
+  }
 
   function clickcontact(id){
     target = '#popup' + id;
@@ -19,3 +24,5 @@ function openNav() {
     target = '#popup' + id;
     document.querySelector(target).style.display = 'none';
   }
+
+  setTimeout(openPopup, 3000);
