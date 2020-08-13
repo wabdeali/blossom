@@ -39,10 +39,6 @@ p {
     font-family: var(--secondaryFont);
 }
 
-img {
-    width: 100% !important;
-    height: auto !important;
-}
 
 /* SLIDENAV */
 
