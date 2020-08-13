@@ -122,8 +122,8 @@ img {
 .logo {
     margin-top: 10px;
     margin-bottom: 0px;
-    height: 25%;
-    width: 25%;
+    height: 25% !important;
+    width: 25% !important;
     background-position: cover;
     padding: 0;
 }

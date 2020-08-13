@@ -18,7 +18,6 @@ function openNav() {
     document.querySelector(target).style.display = 'flex';
     //document.body.style.overflow="hidden" --- no need of this but its up to you i used fixed in the position of div popup
   }
-
   
   function clickclose(id){
     target = '#popup' + id;
