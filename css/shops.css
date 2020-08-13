@@ -88,8 +88,8 @@ body {
 }
 
 .productDescImg {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     box-shadow: 0px 1px 3px black;
 }
 
